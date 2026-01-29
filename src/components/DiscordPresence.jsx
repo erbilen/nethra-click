@@ -13,7 +13,7 @@ const DISCORD_BADGES = {
     131072: 'verified developer',
     4194304: 'active developer'
 }
-const API_URL = 'http://31.57.33.249:4444';
+const API_URL = 'https://31.57.33.249:4444';
 const DiscordPresence = ({ userId }) => {
     const [discordData, setDiscordData] = useState(null)
     const [loading, setLoading] = useState(true)
@@ -146,5 +146,6 @@ const DiscordPresence = ({ userId }) => {
 
 
 export default DiscordPresence
+
 
 
