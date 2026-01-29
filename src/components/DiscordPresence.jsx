@@ -23,7 +23,7 @@ const DiscordPresence = ({ userId }) => {
 
         const fetchDiscordData = async () => {
             try {
-            const response = await fetch(`http://31.57.33.249:4444/api/status/${userId}`, {
+            const response = await fetch(`/api/status/${userId}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -151,6 +151,7 @@ const DiscordPresence = ({ userId }) => {
 
 
 export default DiscordPresence
+
 
 
 
