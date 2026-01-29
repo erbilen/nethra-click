@@ -23,7 +23,7 @@ const DiscordPresence = ({ userId }) => {
 
         const fetchDiscordData = async () => {
             try {
-                const response = await fetch(`/api/status/${userId}`)
+                const response = await fetch(`http://31.57.33.249:4444/api/status/${userId}`)
                 if (!response.ok) throw new Error('API Error')
                 const data = await response.json()
                 setDiscordData(data)
@@ -143,5 +143,6 @@ const DiscordPresence = ({ userId }) => {
         </div>
     )
 }
+
 
 export default DiscordPresence
