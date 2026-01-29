@@ -13,7 +13,7 @@ const DISCORD_BADGES = {
     131072: 'verified developer',
     4194304: 'active developer'
 }
-
+const API_URL = 'http://31.57.33.249:4444';
 const DiscordPresence = ({ userId }) => {
     const [discordData, setDiscordData] = useState(null)
     const [loading, setLoading] = useState(true)
@@ -23,7 +23,7 @@ const DiscordPresence = ({ userId }) => {
 
         const fetchDiscordData = async () => {
             try {
-                const response = await fetch(`31.57.33.249:4444/api/status/${userId}`)
+                const response = await fetch(`${API_URL}/api/status/${userId}`)
                 if (!response.ok) throw new Error('API Error')
                 const data = await response.json()
                 setDiscordData(data)
@@ -146,4 +146,5 @@ const DiscordPresence = ({ userId }) => {
 
 
 export default DiscordPresence
+
 
