@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/discord/:userId",
+      "destination": "http://31.57.33.249:4444/api/status/:userId"
+    }
+  ]
+}
