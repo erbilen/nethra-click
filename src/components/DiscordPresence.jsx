@@ -27,8 +27,7 @@ const DiscordPresence = ({ userId }) => {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
-            },
-            mode: 'cors'
+            }
         });
                 if (!response.ok) throw new Error('API Error')
                 const data = await response.json()
@@ -152,6 +151,7 @@ const DiscordPresence = ({ userId }) => {
 
 
 export default DiscordPresence
+
 
 
 
