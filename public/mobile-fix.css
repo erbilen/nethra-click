@@ -204,3 +204,30 @@ video {
         transform: none !important;
     }
 }
+
+@media (max-width: 480px) {
+
+    /* NAV SABİT GENİŞLİK */
+    nav,
+    .nav,
+    .navbar,
+    .top-nav {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+
+        width: 220px !important;   /* ← KRİTİK */
+        max-width: 90vw !important;
+
+        justify-content: space-between !important;
+    }
+
+    /* NAV BUTONLARI EŞİT */
+    nav a,
+    nav button {
+        flex: 1 !important;
+        text-align: center !important;
+        margin: 0 !important;
+        padding: 8px 0 !important;
+    }
+}
+
