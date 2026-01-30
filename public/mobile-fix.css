@@ -239,3 +239,40 @@ video {
         width: 180px !important;
     }
 }
+
+/* ===============================
+   PROFIL KARTI – BEYAZ HALKA FIX
+   =============================== */
+
+/* Border / Shadow / Filter temizliği */
+.profile-card,
+.profile,
+.profile-container,
+.profile-avatar,
+.avatar,
+.avatar-wrapper,
+.avatar-container,
+.profile-card img,
+.avatar img {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+}
+
+/* iOS Safari tap highlight kaldır */
+@media (max-width: 768px) {
+    * {
+        -webkit-tap-highlight-color: transparent !important;
+    }
+}
+
+/* Pseudo-element (before / after) kaynaklı halka */
+.profile-card::before,
+.profile-card::after,
+.avatar::before,
+.avatar::after {
+    content: none !important;
+    display: none !important;
+}
+
